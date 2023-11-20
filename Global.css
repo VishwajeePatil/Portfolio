@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+.spacer{
+    height: 100vh;
+}
+html{
+    font-size: 20px;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #8ecae6;
+}
+.br{
+    border: 2px solid red;
+}
