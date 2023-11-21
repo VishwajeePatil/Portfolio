@@ -6,6 +6,11 @@
 }
 .spacer{
     height: 100vh;
+    background-color: blueviolet;
+}
+#spacer{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
 }
 html{
     font-size: 20px;
@@ -15,8 +20,30 @@ html , body{
     width: 100%;
 }
 body{
-    background-color: #8ecae6;
+    background-color: #80b5ce;
 }
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Utility Classes */
 .br{
     border: 2px solid red;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    height: 100%;
+    padding:0 20px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+/* Utility Classes Ends Here */
+/* Media Queries */
+@media screen and (max-width:460px) {
+    html{
+        font-size: 10px;
+    } 
 }

@@ -7,11 +7,34 @@
     <link rel="shortcut icon" href="../Assets/Favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="../Global.css">
+    <link rel="stylesheet" href="../components/menubtn.css">
 </head>
 <body>
+    <!-- Import Navabar -->
+    <div id="navbar">
+        <div class="container flex">
+            <div class="nav_logo flex">
+                <p>Vishwajeet Patil</p>
+            </div>
+            <div class="nav_links flex">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">Resume</a>
+                <div class="menu_icon flex">
+                    <input type="checkbox" role="button" aria-label="Display the menu" class="menu">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navabar Ends Here -->
+    <!-- Watermark Starts -->
+    <div id="watermark">
+        <p>Vishwajeet Patil</p>
+    </div>
+    <!-- Watermark Ends -->
     <!-- Welcome Page Starts -->
     <div id="welcome" class="">
-        <div class="msg_box">
+        <div class="msg_box ">
             <p id="welcome_msg" ></p>
         </div>
         <div class="quote">
@@ -20,6 +43,7 @@
     </div>
     <!-- Welcome Page Ends -->
     <div class="spacer"></div>
+    <div id="spacer"></div>
 </body>
 <script src="index.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
