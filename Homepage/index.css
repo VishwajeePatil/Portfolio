@@ -20,7 +20,7 @@
     position: fixed;
     top: 0;
     background-color: #023047;
-    display: none !important;
+    display: none;
 }
 #welcome .msg_box{
     width: fit-content;
@@ -83,6 +83,8 @@
     gap: 20px;
     position: relative;
     overflow: hidden;
+    top: 0;
+    right: -20px;
 }
 #navbar .nav_links a{
     position: relative;
@@ -96,15 +98,29 @@
 
 #navbar .menu_icon{
     height: 100%;
-    border-radius: 30% 40% 40%;
-    background-color: blanchedalmond;
+    justify-content: center;
     scale: 0;
+}
+#navbar .menu_icon > button{
+    /* height: 100%; */
 }
 /* Navbar Ends */
 
 
 
 /* Media Queries */
+@media screen and (max-width:760px) {
+    #navbar .nav_links{
+        overflow:visible;
+        flex-direction: column-reverse; 
+        top: 300%;
+        /* right: 10px; */
+    }
+}
 @media screen and (max-width:460px) {
-    
+    #navbar .nav_links{
+        overflow:visible;
+        flex-direction: column-reverse; 
+        top: 230%;
+    }
 }

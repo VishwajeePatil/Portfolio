@@ -33,18 +33,18 @@ const navbar = ()=>{
     }
     const menu_btn_inc = ()=>{
         gsap.to("#navbar .menu_icon",{
-            scale:1
+            scale:0.6
         })
     }
     const a_tag_down = ()=>{
         gsap.to("#navbar .nav_links a",{
-            top:`100%`,
+            left:`120%`,
             stagger:.1
         })
     }
     const a_tag_up = ()=>{
         gsap.to("#navbar .nav_links a",{
-            top:`0`,
+            left:`0`,
             stagger:.1
         })
     }
