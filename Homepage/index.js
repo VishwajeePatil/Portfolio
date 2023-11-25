@@ -89,3 +89,28 @@ const welcomeMsg = ()=>{
 }
 welcomeMsg();
 // Welcome Page Ended
+
+
+// Hero Section Started
+const animate_icons = ()=>{
+    gsap.from("#hero h1",{
+        opacity:0,
+        delay:1.5,
+        duration:3
+    })
+    gsap.from("#hero .skill",{
+        top:100,
+        delay:1.5,
+        duration:0.3,
+        stagger:0.1,
+    })
+    document.addEventListener("scroll",(val)=>{
+        console.log(val)
+        gsap.to("#hero .skill",{
+            top:-scrollY,
+            stagger:0.1
+        })
+    })
+}
+animate_icons();
+// Hero Section Ended

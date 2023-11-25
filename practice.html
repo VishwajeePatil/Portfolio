@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root {
+      --main-color: #000;
+      --secondary-color: #fff;
+      --bg-color: #000;
+    }
+
+    body {
+      background: var(--bg-color);
+      /* font-family: 'Satoshi', sans-serif; */
+      font-family: "poppins"
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--secondary-color);
+    }
+    .home-section {
+      display: grid;
+      place-items:center;
+      position: relative;
+      margin-top: 10rem;
+    }
+
+    .home-section h1 {
+      font-size: clamp(3rem, 4vw, 6rem);
+      color: var(--secondary-color);
+      width: 70%;
+      font-weight: 600;
+      text-align: center;
+      text-transform: uppercase;
+      z-index: 1;
+      background: linear-gradient(to left,
+      #ffffff,
+      #00000000);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .home-section a {
+      background: var(--secondary-color);
+      color: var(--main-color);
+      padding: 10px 1rem;
+      margin-top: 4rem;
+      border-radius: 50px;
+      transition: background 0.3s ease-in-out;
+    }
+    .home-section a:hover{
+      background: linear-gradient(to right,
+      #ffffff,
+      #00000000);
+    }
+
+    .about-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      padding: 4rem;
+      margin-top: 10rem;
+    }
+
+    .about-description h1,
+    .about-description p {
+      color: var(--secondary-color);
+    }
+
+    .about-description p {
+      margin-top: 2rem;
+      font-size: 2rem;
+    }
+
+    .about-image {
+      border: 1px solid red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about-image img {
+      aspect-ratio: 1/1;
+      width: 100%;
+    }
+
+    @media (max-width:768px) {
+      body.active {
+        overflow: hidden;
+      }
+
+      .nav-wrapper {
+        padding: 2rem;
+      }
+
+      .nav-wrapper ul {
+        display: none;
+      }
+
+      .burger {
+        display: flex;
+      }
+
+      .burger-links {
+        display: flex;
+      }
+
+      .about-section {
+        grid-template-columns: 1fr;
+      }
+
+      .about-description {
+        text-align: center;
+      }
+
+      .about-description p {
+        font-size: revert;
+      }}
+  </style>
+</head>
+
+<body>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap" rel="stylesheet">
+
+
+  <div class="home-section">
+    <div class="home-hero">
+    </div>
+
+    <h1>
+      Full Stack MERN Developer
+    </h1>
+
+    <a href="#">Learn More</a>
+  </div>
+
+  <div class="about-section">
+    <div class="about-description">
+      <h1>ABOUT US</h1>
+      <p>
+        We're a creative studio that turns ideas into functional art. With a focus on collaboration and innovation, we
+        offer a range of design services to help businesses stand out. Let's work together to bring your vision to life.
+      </p>
+    </div>
+
+    <div class="about-image">
+      <img
+        src="https://images.unsplash.com/photo-1554941829-202a0b2403b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+        alt="img">
+    </div>
+  </div>
+</body>
+<script>
+  const burgerLinks = document.querySelector('.burger-links');
+const burger = document.querySelector('.burger');
+const body = document.querySelector('body');
+
+burgerButton = function()
+{
+  burgerLinks.classList.toggle('active');
+  burger.classList.toggle('active');
+  body.classList.toggle('active');
+}
+</script>
+</html>

@@ -21,6 +21,7 @@
     top: 0;
     background-color: #023047;
     display: none;
+    z-index: 999;
 }
 #welcome .msg_box{
     width: fit-content;
@@ -107,7 +108,46 @@
 /* Navbar Ends */
 
 
-
+/* Hero Section Started */
+#hero{
+    height: 100vh;
+    width: 100%;
+}
+#hero > div{
+    position: relative;
+}
+#hero h1{
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(to left,
+      #ffffff,
+      #00000000);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: rgba(0, 47, 255, 0.039);
+}
+#hero .skills{
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    transform: translate(0%,-50%);
+    justify-content: space-between;
+    padding: 0 20px;
+    overflow: hidden;
+}
+#hero .skill{
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+}
+/* Hero Section Ends */
 /* Media Queries */
 @media screen and (max-width:760px) {
     #navbar .nav_links{
